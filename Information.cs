@@ -7,25 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework;
-using MetroFramework.Forms;
-using System.Data.SqlClient;
 
 namespace CSCDashboard
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Information : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public Information()
         {
             InitializeComponent();
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            Information issdf = new Information();
-           
-            this.Hide();
-             issdf.ShowDialog();
+            MessageBox.Show("This is vulnerable website ");
         }
     }
 }
